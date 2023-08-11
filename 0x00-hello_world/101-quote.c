@@ -1,11 +1,12 @@
 #include <stdio.h>
 /*
- * main 
- *  **/
+ * main: A C program that print a line to the standard error
+ * Return 1 (success)
+ */
 int main(void)
 {
-	char quo[]= "and that piece of art is useful\n" - Dora Korpar,  2015-10-19\n"
-	write(1.quo.59);
-	return(1);
+	fput("and that piece of art is useful\" - Dora Korpar,
+	2015-10-19\n", stdout);
+	return (1);
 }
 
