@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- *  * *str_concat - concatenates two strings
- *   * @s1: the string to concatenate
- *    * @s2: the second string to concatenate
- *     * Return: the pointer to the new string,
- *      * or NULL
- *       */
+ * *str_concat - concatenates two strings
+ * @s1: the string to concatenate
+ * @s2: the second string to concatenate
+ * Return: the pointer to the new string,
+ * or NULL
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
