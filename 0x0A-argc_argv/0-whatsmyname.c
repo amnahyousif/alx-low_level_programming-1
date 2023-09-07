@@ -1,37 +1,15 @@
-nclude <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- *  * *create_array - creates array of chars
- *   * & initializes it with a specific char
- *    * @c: the char to initialize the array c
- *     * @size: the size of the array to create
- *      * Return: the pointer to the array or NULL
- *       */
-char *create_array(unsigned int size, char c)
+ * main - prints program name
+ * @argv: array of arguments
+ * @argc: number of arguments
+ * Return: 0 always
+ */
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	char *ptr;
-	unsigned int x = 0;
+	printf("%s\n", *argv);
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
-
-	ptr = (char *)malloc(sizeof(char) * size);
-
-	if (ptr == NULL)
-	{
-		return (0);
-	}
-
-	while (x < size)
-	{
-		*(ptr + x) = c;
-		x++;
-	}
-
-	*(ptr + x) = '\0';
-
-	return (ptr);
+	return (0);
 }
